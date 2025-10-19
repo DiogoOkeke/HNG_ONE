@@ -150,7 +150,6 @@ nav:hover {
 article {
   padding: 1.5rem 2.5rem;
   background-color: var(--pink-two);
-  backdrop-filter: blur(1px);
 }
 
 div,
