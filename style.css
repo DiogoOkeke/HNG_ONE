@@ -150,6 +150,7 @@ nav:hover {
 article {
   padding: 1.5rem 2.5rem;
   background-color: var(--pink-two);
+  backdrop-filter: blur(1px);
 }
 
 div,
@@ -167,6 +168,7 @@ nav.socials {
 
 div.timeStamp {
   padding: 1rem 3.5rem;
+  line-height: 2.4rem;
 }
 
 div.links {
@@ -188,7 +190,7 @@ p.socials-text {
 @media only screen and (max-width: 768px) {
   main {
     flex-direction: column;
-    margin: 2rem 1rem;
+    margin: 6.5rem 2rem;
   }
 
   section:first-child {
@@ -209,5 +211,19 @@ p.socials-text {
 
   div.links {
     font-size: 2rem;
+  }
+
+  article.intro,
+  div.timeStamp {
+    line-height: 2.3rem;
+  }
+
+  article.hobbies {
+    line-height: 2.5rem;
+  }
+
+  article.dislikes {
+    line-height: 3rem;
+    word-wrap: break-word;
   }
 }
