@@ -1,3 +1,4 @@
+"use strict";
 document.addEventListener("DOMContentLoaded", () => {
   // Find the element to display the time
   const timeElement = document.querySelector('[data-testid="test-user-time"]');
