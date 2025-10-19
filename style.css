@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink-five);
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --pink-one: #fb6f92;
+  --pink-two: #ff8fab;
+  --pink-three: #ffb3c6;
+  --pink-four: #ffc2d1;
+  --pink-five: #ffe5ec;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--pink-five);
+  text-decoration: underline;
+  transform: scale(1.3);
+}
+
+a:visited {
+  color: var(--pink-four);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--pink-two);
+  text-decoration: underline;
+}
+
+img[src="profile.jpg"] {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem 6rem; */
+  margin: 3.5rem 9rem;
+  /* border: 2px solid black; */
+  border-radius: 3rem;
+}
+
+section:first-child {
+  margin-right: 3rem;
+  margin-top: -1.2rem;
+}
+
+section:first-child > div.bio {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-top: -2rem; */
+  line-height: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+
+figure + p {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+figcaption {
+  margin-block: 1.5rem;
+}
+
+div.bio + nav.socials {
+  margin-block: 2rem;
+  border: 2px solid var(--pink-one);
+}
+
+div.bio + nav.socials,
+div.timeStamp {
+  margin-block: 1.3rem;
+  font-size: 1.13rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+section:last-child {
+  font-size: 0.95rem;
+  letter-spacing: 0.095rem;
+}
+
+section:last-child article.hobbies {
+  margin-block: 2rem;
+}
+
+article.intro > p {
+  line-height: 1.4rem;
+}
+
+article > h2 {
+  margin-bottom: 1.15rem;
+}
+
+article.intro > h2 {
+  margin-bottom: 0.65rem;
+}
+
+ol.two-column-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  line-height: 0rem;
+}
+
+article,
+div,
+nav {
+  border: 2px solid var(--pink-one);
+  border-radius: 2rem;
+  color: white;
+  box-shadow: 11px 14px 15px rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+
+article:hover,
+div:hover,
+nav:hover {
+  transform: scale(1.05);
+}
+
+article {
+  padding: 1.5rem 2.5rem;
+  background-color: var(--pink-two);
+}
+
+div,
+nav {
+  background-color: var(--pink-four);
+}
+
+div.bio {
+  padding: 1.5rem 3rem;
+}
+
+nav.socials {
+  padding: 1.5rem 3.5rem;
+}
+
+div.timeStamp {
+  padding: 1rem 3.5rem;
+}
+
+div.links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  border: none;
+  box-shadow: none;
+}
+
+p.socials-text {
+  font-weight: bold;
+  font-size: 1.45rem;
+}

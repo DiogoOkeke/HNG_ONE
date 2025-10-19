@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Okeke Chidiogo" />
+    <meta name="description" content="HNG Stage One Task." />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile_Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://hng.tech/media/svgs/secondaryLogo.svg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/4a67cd5783.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main data-testid="test-profile-card">
+      <section>
+        <div class="bio">
+          <figure data-testid="test-user-avatar">
+            <img src="profile.jpg" alt="" />
+            <figcaption data-testid="test-user-name">Okeke Chidiogo</figcaption>
+          </figure>
+          <p>HNG Intern, FrontEnd Developer and Book Lover.</p>
+        </div>
+
+        <nav class="socials">
+          <p class="socials-text">Connect With Me Via:</p>
+
+          <div class="links" data-testid="test-user-social-links">
+            <a
+              data-testid="test-user-social-twitter"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://x.com/DiogoOkeke"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+              data-testid="test-user-social-instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/diogo_okeke/?igsh=enVoMDl4anAyM3Jz#"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              data-testid="test-user-social-linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFcBvEznbJehwAAAZn9Tvf4WbSvPRSf2bXL65TSTkdVqzEMVgVkQHpyWeIrrXVwcgnDlHlay0p9Ule8JbeokEN3BaRNmlqRojty0OgexLIbcv_ugirGWeEyKFCeDPTu5MnDhr4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fchidiogo-okeke%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+              data-testid="test-user-social-github"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="github.com/DiogoOkeke"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </nav>
+
+        <div class="timeStamp" data-testid="test-user-time">
+          <p>Time Stamp In Milliseconds: <span id="currentTime"></span></p>
+        </div>
+      </section>
+
+      <section>
+        <article>
+          <h2>Intro:</h2>
+          <p data-testid="test-user-bio">
+            Hi, <br />
+            I'm Okeke Chidiogo, a passionate FrontEnd developer focused on
+            creating clean, responsive and user-friendly web interfaces. I turn
+            ideas into seamless digital experiences with precision and
+            creativity using modern technologies, while continuously learning
+            and adapting to the ever-evolving world of web development.
+          </p>
+        </article>
+
+        <article data-testid="test-user-hobbies" class="hobbies">
+          <h2>Hobbies:</h2>
+          <ol class="two-column-list">
+            <li>Creating Websites</li>
+            <li>Reading Novels</li>
+            <li>Listening to Music</li>
+            <li>Traveling</li>
+            <li>Creative Writing</li>
+            <li>Watching Podcasts</li>
+            <li>Watching Debates</li>
+            <li>Hiking</li>
+          </ol>
+        </article>
+
+        <article data-testid="test-user-dislikes" class="dislikes">
+          <h2>Dislikes:</h2>
+          <ol class="two-column-list">
+            <li>Quaker Oats</li>
+            <li>Chaotic Environment</li>
+            <li>Crowded Places</li>
+            <li>Disorganization</li>
+            <li>Heat</li>
+            <li>Power Outage</li>
+            <li>Slow Internet</li>
+            <li>Bad Manners</li>
+          </ol>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
