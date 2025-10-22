@@ -34,7 +34,7 @@ let messageReply = messageInput.value;
 
 function validText(reply) {
   if (nameReply === "") {
-    nameError.textContent = "Name Cannot Be Blank!";
+    nameError.textContent = "Name cannot be blank!";
     nameInput.style.border = "2px solid red";
     nameInput.style.transform = "scale(1.05);";
   } else {
