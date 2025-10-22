@@ -37,14 +37,18 @@
 
     <main>
       <div class="contactUs-div">
-        <form method="post" action="">
+        <form id="form" method="post" action="">
           <div>
-            <label for="fullName">Full Name:</label> <br />
+            <label for="fullName" data-testid="test-contact-name"
+              >Full Name:</label
+            >
+            <br />
             <input
               id="fullName"
               name="Name"
               type="text"
               placeholder="Efua Coker"
+              onkeyup="validText(nameReply);"
             />
             <p class="name-error"></p>
           </div>
@@ -52,7 +56,8 @@
           <br />
 
           <div class="second-div">
-            <label for="email">Email:</label> <br />
+            <label for="email" data-testid="test-contact-email">Email:</label>
+            <br />
             <input
               id="email"
               type="email"
@@ -65,12 +70,16 @@
           <br />
 
           <div>
-            <label for="subject">Subject:</label> <br />
+            <label data-testid="test-contact-subject" for="subject"
+              >Subject:</label
+            >
+            <br />
             <input
               id="subject"
               name="Subject"
               type="text"
               placeholder="Offer of Employment..."
+              onkeyup="validText(subjectReply);"
             />
             <p class="subject-error"></p>
           </div>
@@ -78,23 +87,37 @@
           <br />
 
           <div class="last-div">
-            <label for="message">Message:</label> <br />
+            <label data-testid="test-contact-message" for="message"
+              >Message:</label
+            >
+            <br />
             <input
               id="message"
               name="Message"
               type="text"
               placeholder="Good day Diogo, We're pleased to inform you..."
+              onkeyup="validText(messageReply);"
             />
-            <p class="message-error"></p>
+            <p data-testid="" class="message-error"></p>
           </div>
 
           <br />
 
-          <button type="submit">Submit</button>
+          <button
+            data-testid="test-contact-submit"
+            class="submit-button"
+            type="submit"
+          >
+            Submit
+          </button>
         </form>
       </div>
 
-      <div class="success-div"></div>
+      <div data-testid="test-contact-success" class="success-div">
+        <h2>Thank You!</h2>
+        <p>Your details have been successfully submitted.</p>
+        <button class="success-button" type="submit">Okay.</button>
+      </div>
     </main>
   </body>
 </html>
