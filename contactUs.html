@@ -50,7 +50,7 @@
               placeholder="Efua Coker"
               onkeyup="validText(nameReply);"
             />
-            <p class="name-error"></p>
+            <p data-testid="test-contact-error-name" class="name-error"></p>
           </div>
 
           <br />
@@ -64,7 +64,7 @@
               name="Email"
               placeholder="name@example.com"
             />
-            <p class="mail-error"></p>
+            <p data-testid="test-contact-error-email" class="mail-error"></p>
           </div>
 
           <br />
@@ -81,7 +81,10 @@
               placeholder="Offer of Employment..."
               onkeyup="validText(subjectReply);"
             />
-            <p class="subject-error"></p>
+            <p
+              data-testid="test-contact-error-subject"
+              class="subject-error"
+            ></p>
           </div>
 
           <br />
@@ -98,7 +101,10 @@
               placeholder="Good day Diogo, We're pleased to inform you..."
               onkeyup="validText(messageReply);"
             />
-            <p data-testid="" class="message-error"></p>
+            <p
+              data-testid="test-contact-error-message"
+              class="message-error"
+            ></p>
           </div>
 
           <br />
