@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Okeke Chidiogo" />
+    <meta name="description" content="HNG STAGE ONE TASK" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contactUs.css" />
+    <link
+      rel="shortcut icon"
+      href="https://hng.tech/media/svgs/secondaryLogo.svg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/4a67cd5783.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contactUs-div">
+        <form method="post" action="">
+          <div>
+            <label for="fullName">Full Name:</label> <br />
+            <input
+              id="fullName"
+              name="Name"
+              type="text"
+              placeholder="Efua Coker"
+            />
+            <p class="name-error"></p>
+          </div>
+
+          <br />
+
+          <div class="second-div">
+            <label for="email">Email:</label> <br />
+            <input
+              id="email"
+              type="email"
+              name="Email"
+              placeholder="name@example.com"
+            />
+            <p class="mail-error"></p>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="subject">Subject:</label> <br />
+            <input
+              id="subject"
+              name="Subject"
+              type="text"
+              placeholder="Offer of Employment..."
+            />
+            <p class="subject-error"></p>
+          </div>
+
+          <br />
+
+          <div class="last-div">
+            <label for="message">Message:</label> <br />
+            <input
+              id="message"
+              name="Message"
+              type="text"
+              placeholder="Good day Diogo, I'll like to..."
+            />
+            <p class="message-error"></p>
+          </div>
+
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="success-div"></div>
+    </main>
+  </body>
+</html>
