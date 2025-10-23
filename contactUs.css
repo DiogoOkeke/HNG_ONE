@@ -184,3 +184,115 @@ button {
   color: white;
   letter-spacing: 0.25rem;
 }
+
+button.submit-button {
+  margin: auto 12rem;
+}
+
+/* Responsiveness for tabs */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body,
+  main,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    margin: 2rem 4rem 4rem auto;
+  }
+
+  main {
+    /* width: 30vw; */
+    font-size: 0.9rem;
+    margin: 0rem auto;
+  }
+
+  input {
+    width: 0;
+    width: 100vw;
+    font-size: 0.9rem;
+    /* padding: 1rem; */
+    margin-left: 0;
+  }
+
+  ::placeholder {
+    font-size: 0.9rem;
+  }
+
+  form div {
+    padding: 1.25rem 4rem 1.25rem 2rem;
+    width: 75vw;
+    border-radius: 0.9rem;
+    margin: -2rem;
+    margin-left: -6rem;
+  }
+
+  button.submit-button {
+    margin: auto 6rem;
+    /* padding: 1.5rem 4rem; */
+    font: 1.3rem;
+    /* width: 60vw; */
+    margin-block: 3rem;
+    border-radius: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  body,
+  main,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+  }
+
+  main {
+    /* width: 30vw; */
+    font-size: 0.9rem;
+    margin: 0rem auto;
+  }
+
+  input {
+    width: 0;
+    padding: 0;
+
+    /* width: 100em; */
+    font-size: 0.9rem;
+    /* padding: 1rem; */
+    margin-left: 0;
+  }
+
+  ::placeholder {
+    font-size: 0.9rem;
+  }
+
+  form div {
+    width: 0;
+    height: 0;
+    padding: 0;
+    word-wrap: normal;
+
+    /* padding: 1.5rem 10rem; */
+    /* width: 70vw; */
+    border-radius: 0.9rem;
+    font-size: 0.9rem;
+    /* margin-block: -6rem; */
+    margin: 3rem auto;
+  }
+
+  button.submit-button {
+    margin: auto 6rem;
+    /* padding: 1.5rem 4rem; */
+    font: 1.3rem;
+    /* width: 60vw; */
+    margin-block: 3rem;
+    border-radius: 1.1rem;
+  }
+}

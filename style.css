@@ -84,7 +84,7 @@ main {
 
 section:first-child {
   margin-right: 3rem;
-  /* margin-top: 2.2rem; */
+  margin-top: -1.6rem;
 }
 
 section:first-child > div.bio {
